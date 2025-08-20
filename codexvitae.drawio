@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram id="PCvDaVlzvgcHmpy4BJ9M" name="Page-1">
+    <mxGraphModel dx="766" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="User Interface" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="340" y="50" width="162" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Query Processor" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="79" y="135" width="175" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Context Provider" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="8" y="261" width="180" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Response Generator" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="259" y="261" width="203" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Document Retriever" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="231" y="388" width="203" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Output Result" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="511" y="388" width="158" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Input query" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.9;entryX=0.5;entryY=-0.01;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="167" y="98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="Retrieve context" style="curved=1;startArrow=none;endArrow=block;exitX=0.28;exitY=0.99;entryX=0.45;entryY=0;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="77" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="Return context" style="curved=1;startArrow=none;endArrow=block;exitX=0.78;exitY=0;entryX=0.62;entryY=0.99;" parent="1" source="4" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="214" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Generate response" style="curved=1;startArrow=none;endArrow=block;exitX=0.97;exitY=0.99;entryX=0.5;entryY=0;" parent="1" source="3" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="361" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Fetch documents" style="curved=1;startArrow=none;endArrow=block;exitX=0.18;exitY=1;entryX=0.24;entryY=-0.01;" parent="1" source="5" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Return documents" style="curved=1;startArrow=none;endArrow=block;exitX=0.56;exitY=-0.01;entryX=0.5;entryY=1;" parent="1" source="6" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Deliver response" style="curved=1;startArrow=none;endArrow=block;exitX=0.81;exitY=1;entryX=0.28;entryY=-0.01;" parent="1" source="5" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="508" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Show result" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=-0.01;entryX=0.99;entryY=1;" parent="1" source="7" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
