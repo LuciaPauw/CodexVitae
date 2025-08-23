@@ -1,5 +1,8 @@
+import os
 import chromadb
 from chromadb.utils import embedding_functions
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 client = chromadb.PersistentClient(path="chroma_db")
 
