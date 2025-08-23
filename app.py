@@ -5,8 +5,10 @@ from backend.rag_pipeline import rag_query
 st.set_page_config(
     page_title="Codex Vitae"
 )
+st.image("./static/banner.png", use_container_width=True)
 
-st.title("📚 Minimal RAG Prototype")
+st.title("Lucia Pauw")
+st.subheader("Codex Vitae")
 
 user_question = st.text_input("Ask a question:")
 
