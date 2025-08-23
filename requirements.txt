@@ -1,5 +1,6 @@
 streamlit
 groq
+pysqlite3-binary
 chromadb
 sentence_transformers
 python-dotenv
