@@ -23,7 +23,7 @@ st.sidebar.markdown(
 
 st.sidebar.image("./static/Pauw.png", use_container_width=True)
 
-# main panel
+# main panel: header
 col1, col2 = st.columns([1, 4])
 with col1:
     st.image("./static/chatbot2.png", use_container_width=True)
@@ -31,20 +31,44 @@ with col2:
     st.subheader("Thinking of hiring me?")
     st.text("Let this agent answer your questions about who I am and what I can do.")
 
+# main panel: user input
 st.markdown(
     """
     <style>
-        .stTextInput input {
-            background-color: white !important;
-        }
+    /* text input background */
+    .stTextInput input {
+        background-color: white !important;
+    }
+    /* select tone background */
+    div[data-baseweb="select"] > div {
+        background-color: #dd765a !important;
+        max-width: 200px;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
-user_question = st.text_input("Ask away!", placeholder="E.g. What are Lucia's strongest technical skills?")
+
+col1, col2 = st.columns([3, 1])
+
+with col1:
+    user_question = st.text_input(
+        "Ask away!", 
+        placeholder="E.g. What are Lucia's strongest technical skills?"
+    )
+
+with col2:
+    tone = st.selectbox(
+        "Answer tone",
+        options=[
+            "Interview",
+            "Fast facts",
+            "Humble brag"
+        ]
+    )
 
 if st.button("Submit") and user_question:
     with st.spinner("Generating answer..."):
-        answer = rag_query(user_question)
+        answer = rag_query(user_question, tone)
     st.write("### Answer")
     st.write(answer)

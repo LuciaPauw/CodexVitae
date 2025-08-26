@@ -24,6 +24,6 @@ collection = client.get_or_create_collection(
 def add_documents(docs, ids):
     collection.add(documents=docs, ids=ids)
 
-def retrieve(query, n_results=3):
+def retrieve(query, n_results=12):
     results = collection.query(query_texts=[query], n_results=n_results)
     return results["documents"][0]
