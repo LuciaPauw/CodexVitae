@@ -26,7 +26,7 @@ st.sidebar.image("./static/Pauw.png", use_container_width=True)
 # main panel
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.image("./static/chatbot2.png", width=200)
+    st.image("./static/chatbot2.png", use_container_width=True)
 with col2:
     st.subheader("Thinking of hiring me?")
     st.text("Let this agent answer your questions about who I am and what I can do.")
