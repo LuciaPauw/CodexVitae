@@ -6,7 +6,7 @@
 
 ## App Infrastructure
 
-*Summary:* CodexVitae is an context-aware personal agent designed to answer your questions about me. It uses retrieval-augmented generation to provide accurate answers about my skills, academic achievements, work experience, projects, and character.
+*Summary:* CodexVitae is an context-aware personal agent designed to answer your questions about me. It uses retrieval-augmented generation to provide accurate answers about my skills, academic achievements, work experience, values, and character.
 
 *Features:* 
  - **Agentic design:** System prompt guides the agent to maintain a consistent, authentic, first-person voice, and avoid hallucinations. If information is missing, it suggests contacting me directly.
